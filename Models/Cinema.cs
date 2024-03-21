@@ -6,6 +6,7 @@ namespace Movie_Booking.Models
     {
         [Key]public int CinemaId { get; set; }
         public string CinemaLogo {  get; set; }
+        public string CinemaName {  get; set; }
         [Required] public string CinemaDescription {  get; set; }
         //one cinema can host multiple movies
         public List<Movie> Movies { get; set; }
